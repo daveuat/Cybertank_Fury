@@ -1,0 +1,11 @@
+Model Information:
+* title:	Health Pick Up V1
+* source:	https://sketchfab.com/3d-models/health-pick-up-v1-5fcfc393863d4604a15092039084c3f1
+* author:	Technos99 (https://sketchfab.com/Technos99)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Health Pick Up V1" (https://sketchfab.com/3d-models/health-pick-up-v1-5fcfc393863d4604a15092039084c3f1) by Technos99 (https://sketchfab.com/Technos99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
