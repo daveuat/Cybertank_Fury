@@ -10,7 +10,7 @@ public class TankShooter : Shooter
     public float damageDone;
     public float shellLife;
     public float targetRange;
-    public float rateFire; // Add this line to declare rateFire
+    public float rateFire;
 
     private float nextFire;
 
@@ -19,12 +19,12 @@ public class TankShooter : Shooter
         nextFire = Time.time;
     }
 
-    public override void Shoot(GameObject tankShell1, float shellForce, float damageDone, float lifeSpan)
+    public override void Shoot(GameObject projectilePrefab, float shellForce, float damageDone, float lifeSpan)
     {
         if (Time.time >= nextFire)
         {
             // Instantiate the projectile
-            GameObject newShell = Instantiate(tankShell1, firepointTransform.position, firepointTransform.rotation);
+            GameObject newShell = Instantiate(projectilePrefab, firepointTransform.position, firepointTransform.rotation);
 
             // Set projectile properties
             DamageOnHit doh = newShell.GetComponent<DamageOnHit>();

@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1010844260666572876, guid: 6b1373072c77fed45bfc514dfd5aa600, type: 3}
+  - {fileID: -631394945369332204, guid: 1d8be4dc0f2185240b466d952ad35a5a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1010844260666572876, guid: 6b1373072c77fed45bfc514dfd5aa600, type: 3}
+  - {fileID: -631394945369332204, guid: 1d8be4dc0f2185240b466d952ad35a5a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -744,7 +744,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1010844260666572876, guid: 6b1373072c77fed45bfc514dfd5aa600, type: 3}
+  - {fileID: -631394945369332204, guid: 1d8be4dc0f2185240b466d952ad35a5a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -782,6 +782,7 @@ GameObject:
   - component: {fileID: 2471276686120177002}
   - component: {fileID: -4955542892905444302}
   - component: {fileID: 8701471015424235167}
+  - component: {fileID: 4469064890819560084}
   m_Layer: 7
   m_Name: EnemyTank1
   m_TagString: Enemy
@@ -797,8 +798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3353726916766107153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.08, y: 0.44, z: -8.2}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6991982845318569752}
@@ -870,13 +871,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161070b37dd7b0144b6705a26ad548b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 50
+  movementSpeed: 5
   speedFactor: 2
-  roamingRadius: 50
-  targetDetectionRadius: 50
+  roamingRadius: 5
+  targetDetectionRadius: 5
   fleeIfPlayerDetected: 0
   useRoaming: 1
-  returnToStartIfFleeing: 0
+  chaseRange: 15
+  shouldReturnToStart: 1
+  startingPosition: {x: 0, y: 0, z: 0}
   waypoints: []
 --- !u!114 &-4563642149443538968
 MonoBehaviour:
@@ -892,11 +895,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepointTransform: {fileID: 2471276684433068959}
   tankShell1: {fileID: 1577479682215691681, guid: 4585749407cb53644b443debf025fe1d, type: 3}
-  shellForce: 1500
-  damageDone: 25
-  shellLife: 10
-  targetRange: 100
-  rateFire: 1
+  shellForce: 250
+  damageDone: 20
+  shellLife: 2
+  targetRange: 10
+  rateFire: 2
 --- !u!114 &2471276686120177002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,6 +953,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2, y: 3.5, z: 4}
   m_Center: {x: 0, y: 1.77, z: -0.19}
+--- !u!114 &4469064890819560084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353726916766107153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21e2648905608e46bff229a08895e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4370451650658400579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,7 +1026,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1010844260666572876, guid: 6b1373072c77fed45bfc514dfd5aa600, type: 3}
+  - {fileID: -631394945369332204, guid: 1d8be4dc0f2185240b466d952ad35a5a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

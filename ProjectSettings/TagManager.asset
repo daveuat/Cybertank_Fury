@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PlayerTank1
   - Enemy
+  - Wall
+  - Obstacle
   layers:
   - Default
   - TransparentFX

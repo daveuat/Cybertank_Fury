@@ -10,17 +10,13 @@ public class Health : MonoBehaviour
     public float maxHealth;
     public float startHealth;
 
-    public float GetCurrentHealth()
-    {
-        return currentHealth;
-    }
+    // Armor Implementation
+    private bool hasArmor;
+    private int armorUpgradeCount;
+    private Color normalHealthColor = Color.green;
+    private Color armorHealthColor = Color.blue;
 
-    public float GetMaxHealth()
-    {
-        return maxHealth;
-    }
-
-    // Copied over from Tanks! script to manage health wheel. some changes made to match my game.
+    // Copied over from Tanks! script to manage health wheel. Some changes made to match my game.
     public Slider m_Slider;
     public Image m_FillImage;
     public Color m_FullHealthColor = Color.green;
@@ -30,7 +26,6 @@ public class Health : MonoBehaviour
     private AudioSource m_ExplosionAudio;
     private ParticleSystem m_ExplosionParticles;
 
-
     private void Awake()
     {
         // Instantiate the explosion prefab from my assets
@@ -39,8 +34,16 @@ public class Health : MonoBehaviour
         m_ExplosionAudio = m_ExplosionParticles.GetComponent<AudioSource>();
         // Disables the prefab until it is activated
         m_ExplosionParticles.gameObject.SetActive(false);
-    }
 
+        // Initialize armor status
+        hasArmor = false;
+        armorUpgradeCount = 0;
+
+        // Set initial health bar color
+        SetHealthBarColor(normalHealthColor);
+
+        SetHealthUI();
+    }
 
     private void OnEnable()
     {
@@ -51,22 +54,59 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float amount, Pawn source)
     {
-        // Adjust the tanks health and update the UI to show the changes.
-        currentHealth -= amount;
+        if (hasArmor)
+        {
+            // Check if the armor health is enough to absorb the damage
+            if (amount <= currentHealth)
+            {
+                // Reduce the armor health
+                currentHealth -= amount;
+            }
+            else
+            {
+                // Calculate the remaining damage after the armor is depleted
+                float remainingDamage = amount - currentHealth;
+
+                // Deplete the armor health
+                currentHealth = 0;
+                hasArmor = false;
+
+                // Set the health bar color to green when the armor is depleted
+                SetHealthBarColor(normalHealthColor);
+            }
+        }
+        else
+        {
+            // Adjust the tank's health and update the UI to show the changes.
+            currentHealth -= amount;
+        }
 
         // Change UI items
         SetHealthUI();
 
-        // If health 0 then pawn death.
+        // If health is 0, the pawn dies.
         if (currentHealth <= 0)
         {
             Die(source);
         }
     }
 
-    // Destroy tank with explosion when at 0 health
+
+
+
+
+
+
+
     public void Die(Pawn source)
     {
+        if (hasArmor)
+        {
+            hasArmor = false;
+            SetHealthBarColor(normalHealthColor);
+            return;
+        }
+
         // Plays instantiated explosion with audio at the tank's position
         m_ExplosionParticles.transform.position = transform.position;
         m_ExplosionParticles.gameObject.SetActive(true);
@@ -77,34 +117,23 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        currentHealth = startHealth;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-    }
-
-    // Also from Tanks! and needed for my slider
-    public void SetHealthUI()
-    {
-        // Adjust the value and color of the slider around the tank.
-        m_Slider.value = currentHealth;
-
-        m_FillImage.color = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, currentHealth / startHealth);
-    }
-
     public void RestoreHealth(float amount)
     {
-        // increase the current health by the specified amount, up to the maximum
+        // Increase the current health by the specified amount, up to the maximum
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
 
-        // update the health UI
+        // Update the health UI
         SetHealthUI();
+    }
+
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public float GetMaxHealth()
+    {
+        return maxHealth;
     }
 
     public float GetCurrentHealthValue()
@@ -117,4 +146,65 @@ public class Health : MonoBehaviour
         return maxHealth;
     }
 
+    public int GetArmorUpgradeCount()
+    {
+        return armorUpgradeCount;
+    }
+
+    private void SetHealthUI()
+    {
+        // Adjust the value and color of the slider around the tank.
+        m_Slider.value = currentHealth;
+
+        float normalizedHealth = currentHealth / maxHealth;
+
+        // Update health bar color based on armor status
+        if (hasArmor)
+        {
+            m_FillImage.color = armorHealthColor;
+        }
+        else if (m_FillImage.color != normalHealthColor)
+        {
+            m_FillImage.color = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, normalizedHealth);
+        }
+    }
+
+
+
+
+
+
+    public void ApplyArmorUpgrade(float amount)
+    {
+        maxHealth += amount;
+        currentHealth += amount;
+        hasArmor = true;
+        armorUpgradeCount++;
+
+        // Update health UI and health bar color
+        SetHealthUI();
+        if (!hasArmor)
+        {
+            SetHealthBarColor(normalHealthColor);
+        }
+    }
+
+
+
+
+
+    private void SetHealthBarColor(Color color)
+    {
+        m_FillImage.color = color;
+    }
+
+    private void Start()
+    {
+        currentHealth = startHealth;
+    }
+
+    private void Update()
+    {
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+    }
 }

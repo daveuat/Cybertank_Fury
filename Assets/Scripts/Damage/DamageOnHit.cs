@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class DamageOnHit : MonoBehaviour
 {
-    // damage
-    public float damageDone;
-    public Pawn owner;
+    public float damageDone; // Add this line to define the damageDone field
+    public Pawn owner; // Add this line to define the owner field
 
     public void OnTriggerEnter(Collider other)
     {
@@ -21,17 +20,5 @@ public class DamageOnHit : MonoBehaviour
 
         // Destroy ourselves, whether we did damage or not
         Destroy(gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

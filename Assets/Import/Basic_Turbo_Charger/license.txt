@@ -1,0 +1,11 @@
+Model Information:
+* title:	Basic Turbo Charger
+* source:	https://sketchfab.com/3d-models/basic-turbo-charger-414dd8615bb24b798807fd187cedfe73
+* author:	Angus Whitburn (https://sketchfab.com/AngusWhitburn)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Basic Turbo Charger" (https://sketchfab.com/3d-models/basic-turbo-charger-414dd8615bb24b798807fd187cedfe73) by Angus Whitburn (https://sketchfab.com/AngusWhitburn) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

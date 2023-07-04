@@ -11,6 +11,8 @@ public class PlayerController : Controller
     public KeyCode moveBackwardKey;
     public KeyCode rotateClockwiseKey;
     public KeyCode rotateCounterClockwiseKey;
+    public KeyCode strafeLeftKey;
+    public KeyCode strafeRightKey;
     public KeyCode shootKey;
 
     // Reference to the TankPawn instance
@@ -21,6 +23,11 @@ public class PlayerController : Controller
     {
         // Run the Start() function from the parent (base) class
         base.Start();
+        // Check if the TankPawn reference is not null
+        if (tankPawn == null)
+        {
+            Debug.LogError("TankPawn reference is missing in the PlayerController!");
+        }
     }
 
     // Update is called once per frame
@@ -36,27 +43,37 @@ public class PlayerController : Controller
     {
         if (Input.GetKey(moveForwardKey))
         {
-            pawn.MoveForward();
+            tankPawn.MoveForward();
         }
 
         if (Input.GetKey(moveBackwardKey))
         {
-            pawn.MoveBackward();
+            tankPawn.MoveBackward();
         }
 
         if (Input.GetKey(rotateClockwiseKey))
         {
-            pawn.RotateClockwise();
+            tankPawn.RotateClockwise();
         }
 
         if (Input.GetKey(rotateCounterClockwiseKey))
         {
-            pawn.RotateCounterClockwise();
+            tankPawn.RotateCounterClockwise();
+        }
+
+        if (Input.GetKey(strafeLeftKey))
+        {
+            tankPawn.StrafeLeft();
+        }
+
+        if (Input.GetKey(strafeRightKey))
+        {
+            tankPawn.StrafeRight();
         }
 
         if (Input.GetKeyDown(shootKey))
         {
-            pawn.Shoot();
+            tankPawn.Shoot();
         }
     }
 }

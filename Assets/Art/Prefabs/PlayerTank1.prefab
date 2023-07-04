@@ -32,8 +32,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971244720422018995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.08, y: 0.45, z: -8.2}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6803636550653744450}
@@ -87,9 +87,9 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1.8882273
   m_Center: {x: 0, y: 1.6939343, z: 0}
@@ -126,12 +126,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firepointTransform: {fileID: 2488669795204769658}
-  tankShell1: {fileID: 0}
-  shellForce: 1000
-  damageDone: 25
-  shellLife: 10
-  targetRange: 0
-  rateFire: 1
+  tankShell1: {fileID: 1577479682215691681, guid: 4585749407cb53644b443debf025fe1d, type: 3}
+  shellForce: 350
+  damageDone: 50
+  shellLife: 5
+  targetRange: 20
+  rateFire: 1.5
 --- !u!114 &8509345925894023606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,8 +162,10 @@ MonoBehaviour:
   moveBackwardKey: 115
   rotateClockwiseKey: 100
   rotateCounterClockwiseKey: 97
+  strafeLeftKey: 113
+  strafeRightKey: 101
   shootKey: 32
-  tankPawn: {fileID: 0}
+  tankPawn: {fileID: 5841628568308824246}
 --- !u!114 &5841628568308824246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,16 +178,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6578ad265637042b6c99becc963e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
+  moveSpeed: 5
   turnSpeed: 360
-  mover: {fileID: 0}
-  shellForce: 2500
-  damageDone: 25
-  shellLife: 100
-  rateFire: 1
-  shooter: {fileID: 0}
+  mover: {fileID: 8509345925894023606}
+  shellForce: 350
+  damageDone: 50
+  shellLife: 5
+  rateFire: 1.5
+  shooter: {fileID: 2373658521757894640}
   tankShell1: {fileID: 1577479682215691681, guid: 4585749407cb53644b443debf025fe1d, type: 3}
-  firePointTransform: {fileID: 0}
+  firePointTransform: {fileID: 2488669795204769658}
 --- !u!65 &4279023214313952860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -617,7 +619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7144048761601463340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 3.508}
+  m_LocalPosition: {x: 0, y: 2, z: 3}
   m_LocalScale: {x: 0.083333336, y: 0.083333336, z: 0.083333336}
   m_ConstrainProportionsScale: 0
   m_Children: []

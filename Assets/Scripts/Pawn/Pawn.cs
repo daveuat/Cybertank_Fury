@@ -52,6 +52,8 @@ public abstract class Pawn : MonoBehaviour
     public abstract void MoveBackward();
     public abstract void RotateClockwise();
     public abstract void RotateCounterClockwise();
+    public abstract void StrafeLeft();
+    public abstract void StrafeRight();
 
     public void RestoreHealth(float amount)
     {

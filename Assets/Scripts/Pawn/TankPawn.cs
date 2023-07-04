@@ -41,6 +41,16 @@ public class TankPawn : Pawn
         mover.Rotate(-turnSpeed);
     }
 
+    public override void StrafeLeft()
+    {
+        mover.Move(-transform.right, moveSpeed);
+    }
+
+    public override void StrafeRight()
+    {
+        mover.Move(transform.right, moveSpeed);
+    }
+
     public override void Shoot()
     {
         if (Time.time >= nextFire)
