@@ -1,0 +1,11 @@
+Model Information:
+* title:	High Res Final
+* source:	https://sketchfab.com/3d-models/high-res-final-f5abfc47907a492e88d7e41faa2df25c
+* author:	ChristofferHanson (https://sketchfab.com/ChristofferHanson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "High Res Final" (https://sketchfab.com/3d-models/high-res-final-f5abfc47907a492e88d7e41faa2df25c) by ChristofferHanson (https://sketchfab.com/ChristofferHanson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

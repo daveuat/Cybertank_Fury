@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 429d56aaddb263e4d8ae1d8b2097799b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerPrefab: {fileID: 971244720422018995, guid: 0cf3344d3ec997a4e82d4789b171090a, type: 3}
+  - tankPrefab: {fileID: 971244720422018995, guid: 0cf3344d3ec997a4e82d4789b171090a, type: 3}
+  - roomGenerator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

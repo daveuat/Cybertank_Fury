@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerTank1
+  - Enemy
+  - Wall
+  - Obstacle
+  - UI
+  - playerSpawnParent
+  - playerSpawn
+  - enemySpawnParent
+  - enemySpawn
+  - SpawnPoint
+  - SpawnParent
+  - Ground
+  - MainMenu
+  - PauseMenu
+  - Entrance
+  - Lives
+  - RoomGenerator
+  - PlayerShell
+  - EnemyShell
+  - GameOverUI
+  - GameManager
   layers:
   - Default
   - TransparentFX
@@ -11,10 +32,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Shell
+  - Pawn
+  - Ground
+  - entranceLayer
   - 
   - 
   - 
@@ -40,4 +61,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2034800349
     locked: 0
