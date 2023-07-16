@@ -10,17 +10,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 967838285742965986, guid: 167043272906013438f7914f5109a398, type: 3}
       propertyPath: chaseRange
+<<<<<<< HEAD
       value: 5
+=======
+      value: 0
+>>>>>>> main
       objectReference: {fileID: 0}
     - target: {fileID: 967838285742965986, guid: 167043272906013438f7914f5109a398, type: 3}
       propertyPath: waypoints.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 967838285742965986, guid: 167043272906013438f7914f5109a398, type: 3}
+<<<<<<< HEAD
       propertyPath: targetDetectionRadius
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 967838285742965986, guid: 167043272906013438f7914f5109a398, type: 3}
+=======
+>>>>>>> main
       propertyPath: waypointObjects.Array.size
       value: 4
       objectReference: {fileID: 0}

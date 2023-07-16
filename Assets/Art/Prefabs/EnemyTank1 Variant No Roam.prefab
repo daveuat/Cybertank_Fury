@@ -34,7 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503383093198673823, guid: 5cd2a613a30aec44c8861115490425b8, type: 3}
       propertyPath: targetDetectionRadius
+<<<<<<< HEAD
       value: 15
+=======
+      value: 30
+>>>>>>> main
       objectReference: {fileID: 0}
     - target: {fileID: 1503383093198673823, guid: 5cd2a613a30aec44c8861115490425b8, type: 3}
       propertyPath: returnToStartIfFleeing

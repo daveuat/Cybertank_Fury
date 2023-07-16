@@ -777,6 +777,7 @@ GameObject:
   - component: {fileID: 2720460529816755371}
   - component: {fileID: 2471276686120176976}
   - component: {fileID: 2471276686120176979}
+<<<<<<< HEAD
   - component: {fileID: -914723829318938904}
   - component: {fileID: 1503383093198673823}
   - component: {fileID: -4563642149443538968}
@@ -784,6 +785,14 @@ GameObject:
   - component: {fileID: 4545572847060002440}
   - component: {fileID: 5920313515026751485}
   - component: {fileID: -1959314802431697556}
+=======
+  - component: {fileID: 1503383093198673823}
+  - component: {fileID: -4563642149443538968}
+  - component: {fileID: 2471276686120177002}
+  - component: {fileID: -4955542892905444302}
+  - component: {fileID: 8701471015424235167}
+  - component: {fileID: 4469064890819560084}
+>>>>>>> main
   m_Layer: 7
   m_Name: EnemyTank1
   m_TagString: Enemy
@@ -838,7 +847,11 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
+<<<<<<< HEAD
   m_CollisionDetection: 1
+=======
+  m_CollisionDetection: 0
+>>>>>>> main
 --- !u!135 &2471276686120176979
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -860,6 +873,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.8882273
   m_Center: {x: 0, y: 1.6939343, z: 0}
+<<<<<<< HEAD
 --- !u!114 &-914723829318938904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +902,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
   - {fileID: 8300000, guid: 986d6b30567e30e428f3f21373fe45ca, type: 3}
   - {fileID: 8300000, guid: d47e6ed162da1f740ad807d00f4679f3, type: 3}
+=======
+>>>>>>> main
 --- !u!114 &1503383093198673823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +922,11 @@ MonoBehaviour:
   targetDetectionRadius: 5
   fleeIfPlayerDetected: 0
   useRoaming: 1
+<<<<<<< HEAD
   chaseRange: 10
+=======
+  chaseRange: 15
+>>>>>>> main
   shouldReturnToStart: 1
   startingPosition: {x: 0, y: 0, z: 0}
   waypoints: []
@@ -923,6 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firepointTransform: {fileID: 2471276684433068959}
+<<<<<<< HEAD
   tankShell1: {fileID: 1577479682215691681, guid: 9f6374a93d1c5cf419a42b571efe76ae, type: 3}
   shellForce: 250
   damageDone: 50
@@ -931,6 +952,46 @@ MonoBehaviour:
   rateFire: 2
   fireSounds:
   - {fileID: 8300000, guid: 5ff823f546b52574a931e1d9b44290a6, type: 3}
+=======
+  tankShell1: {fileID: 1577479682215691681, guid: 4585749407cb53644b443debf025fe1d, type: 3}
+  shellForce: 250
+  damageDone: 20
+  shellLife: 2
+  targetRange: 10
+  rateFire: 2
+--- !u!114 &2471276686120177002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353726916766107153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b2c08d519eed949a4d8a719216671e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  startHealth: 100
+  m_Slider: {fileID: 2471276684539813127}
+  m_FillImage: {fileID: 2471276684310861148}
+  m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  m_ExplosionPrefab: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
+--- !u!114 &-4955542892905444302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353726916766107153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8610beb5702359340a5b95584404f2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> main
 --- !u!65 &8701471015424235167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -952,7 +1013,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2, y: 3.5, z: 4}
   m_Center: {x: 0, y: 1.77, z: -0.19}
+<<<<<<< HEAD
 --- !u!114 &4545572847060002440
+=======
+--- !u!114 &4469064890819560084
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -964,6 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21e2648905608e46bff229a08895e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   scoreValue: 100
 --- !u!114 &5920313515026751485
 MonoBehaviour:
@@ -1074,6 +1140,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> main
 --- !u!1 &4370451650658400579
 GameObject:
   m_ObjectHideFlags: 0

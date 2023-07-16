@@ -118,7 +118,10 @@ GameObject:
   - component: {fileID: 7962543516044565566}
   - component: {fileID: 7942366255441799520}
   - component: {fileID: 745269034213616893}
+<<<<<<< HEAD
   - component: {fileID: -2841543933354069305}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: Razorwire
   m_TagString: Untagged
@@ -208,7 +211,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> main
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -228,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageDone: 10
   owner: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &-2841543933354069305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 10
+=======
+>>>>>>> main
 --- !u!1 &7987053017421489588
 GameObject:
   m_ObjectHideFlags: 0

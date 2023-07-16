@@ -67,7 +67,10 @@ GameObject:
   - component: {fileID: 68739389145598574}
   - component: {fileID: 40375377449199670}
   - component: {fileID: 47818502903411460}
+<<<<<<< HEAD
   - component: {fileID: 7710580551361621944}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -140,6 +143,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 --- !u!64 &7710580551361621944
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -193,6 +197,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &597453151626739351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,6 +2923,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04158161, y: 1, z: 1.8672123}
   m_Center: {x: -0.04158122, y: 0.49999997, z: 0.00000008940697}
+<<<<<<< HEAD
 --- !u!1 &1166895882515613837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,6 +2955,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &1391688642125507958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,7 +3169,10 @@ GameObject:
   - component: {fileID: 2557071101247239786}
   - component: {fileID: 2525319000029757556}
   - component: {fileID: 2533095917336089558}
+<<<<<<< HEAD
   - component: {fileID: 5988170046180860482}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -3233,6 +3245,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 --- !u!64 &5988170046180860482
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3317,6 +3330,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &2993751151619123283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,6 +3437,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04158161, y: 1, z: 1.8672123}
   m_Center: {x: -0.04158122, y: 0.49999997, z: 0.00000008940697}
+<<<<<<< HEAD
 --- !u!1 &3053156066689020210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3469,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &3134807864028424782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,6 +3681,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &3538877302179112587
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,6 +3713,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &3622509700410931979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +3820,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04158161, y: 1, z: 1.8672123}
   m_Center: {x: -0.04158122, y: 0.49999997, z: 0.00000008940697}
+<<<<<<< HEAD
 --- !u!1 &3785327593009074131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,6 +3852,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &4135693379677061305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,7 +4864,10 @@ GameObject:
   - component: {fileID: 4361821918939667235}
   - component: {fileID: 4391979560061842885}
   - component: {fileID: 4382713708744391413}
+<<<<<<< HEAD
   - component: {fileID: 1180687639516986218}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -4913,6 +4940,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 --- !u!64 &1180687639516986218
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4935,6 +4963,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 55855a2e016280543b8a35a95a5b354e, type: 3}
+=======
+>>>>>>> main
 --- !u!1 &4373600696911523014
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +5520,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04158161, y: 1, z: 1.8672123}
   m_Center: {x: -0.04158122, y: 0.49999997, z: 0.00000008940697}
+<<<<<<< HEAD
 --- !u!1 &6293809164631026318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,6 +5552,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &6707285428843592342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5731,6 +5764,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &7298100941139489157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,6 +5796,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &7304014404385723390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,6 +6113,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04158161, y: 1, z: 1.8672123}
   m_Center: {x: -0.04158122, y: 0.49999997, z: 0.00000008940697}
+<<<<<<< HEAD
 --- !u!1 &7996668464550047776
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,6 +6145,8 @@ Transform:
   m_Father: {fileID: 3577800142745487504}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &8298751311592841471
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,6 +6222,7 @@ Transform:
   m_Father: {fileID: 1375019458688221055}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &8510865743340719183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,6 +6264,8 @@ Transform:
   m_Father: {fileID: 1375019458688221055}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> main
 --- !u!1 &8514136843506053036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,7 +6508,10 @@ Transform:
   - {fileID: 5031500252071830416}
   - {fileID: 5764276733506711749}
   - {fileID: 7166540649753754262}
+<<<<<<< HEAD
   - {fileID: 3577800142745487504}
+=======
+>>>>>>> main
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6713,7 +6758,10 @@ GameObject:
   - component: {fileID: 8994675339378097044}
   - component: {fileID: 8983460850423112486}
   - component: {fileID: 8975378984867174834}
+<<<<<<< HEAD
   - component: {fileID: 2499674305241898165}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -6786,6 +6834,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 --- !u!64 &2499674305241898165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6808,6 +6857,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 55855a2e016280543b8a35a95a5b354e, type: 3}
+=======
+>>>>>>> main
 --- !u!1 &8997867272161214860
 GameObject:
   m_ObjectHideFlags: 0

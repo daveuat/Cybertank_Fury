@@ -13,12 +13,20 @@ GameObject:
   - component: {fileID: 1577479682215691685}
   - component: {fileID: 1577479682215691686}
   - component: {fileID: 1577479682215691687}
+<<<<<<< HEAD
   - component: {fileID: 173318241066242427}
   - component: {fileID: 531797841545300392}
   - component: {fileID: 2364248880586808523}
   m_Layer: 6
   m_Name: tankShell1
   m_TagString: PlayerShell
+=======
+  - component: {fileID: 1577479682215691680}
+  - component: {fileID: 531797841545300392}
+  m_Layer: 6
+  m_Name: tankShell1
+  m_TagString: Untagged
+>>>>>>> main
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +144,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!114 &173318241066242427
+=======
+--- !u!114 &1577479682215691680
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 500
+<<<<<<< HEAD
 --- !u!82 &2364248880586808523
 AudioSource:
   m_ObjectHideFlags: 0
@@ -259,3 +272,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> main

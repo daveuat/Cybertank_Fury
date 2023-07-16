@@ -273,7 +273,10 @@ GameObject:
   - component: {fileID: 6134267527895100313}
   - component: {fileID: 6993961860981873931}
   - component: {fileID: 4908368867682140813}
+<<<<<<< HEAD
   - component: {fileID: -6895621228994029065}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: TankConfusion
   m_TagString: Untagged
@@ -332,6 +335,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.03
   m_Center: {x: -0.025, y: 0.01, z: 0}
+<<<<<<< HEAD
 --- !u!114 &-6895621228994029065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,6 +352,8 @@ MonoBehaviour:
   bounceSpeed: 0.15
   timeOffset: 0
   bounceAmplitude: 0.15
+=======
+>>>>>>> main
 --- !u!1 &6828126573498548701
 GameObject:
   m_ObjectHideFlags: 0

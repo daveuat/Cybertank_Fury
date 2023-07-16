@@ -17,8 +17,11 @@ GameObject:
   - component: {fileID: 6407792897023970202}
   - component: {fileID: 5841628568308824246}
   - component: {fileID: 4279023214313952860}
+<<<<<<< HEAD
   - component: {fileID: 2697048251045348991}
   - component: {fileID: -9174902735604075417}
+=======
+>>>>>>> main
   m_Layer: 7
   m_Name: PlayerTank1
   m_TagString: Player
@@ -73,7 +76,11 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
+<<<<<<< HEAD
   m_CollisionDetection: 1
+=======
+  m_CollisionDetection: 2
+>>>>>>> main
 --- !u!135 &1639281475333979219
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -89,9 +96,15 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+<<<<<<< HEAD
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 0
+=======
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+>>>>>>> main
   serializedVersion: 3
   m_Radius: 1.8882273
   m_Center: {x: 0, y: 1.6939343, z: 0}
@@ -107,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b2c08d519eed949a4d8a719216671e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   livesManager: {fileID: 0}
   currentHealth: 100
   maxHealth: 100
@@ -114,10 +128,16 @@ MonoBehaviour:
   hasArmor: 0
   normalHealthColor: {r: 0, g: 1, b: 0, a: 1}
   armorHealthColor: {r: 0, g: 0, b: 1, a: 1}
+=======
+  currentHealth: 100
+  maxHealth: 100
+  startHealth: 100
+>>>>>>> main
   m_Slider: {fileID: 1684613785960242924}
   m_FillImage: {fileID: 2670160036961845620}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
+<<<<<<< HEAD
   m_ExplosionPrefabs:
   - {fileID: 1267354932851840, guid: f905eddec7702834c8405b61eb844e75, type: 3}
   - {fileID: 1043624379182380, guid: 2d62aa2c6730e654ca945aa755b91022, type: 3}
@@ -136,6 +156,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7b69beceabbd8f24e8bc62d77ac7ca1c, type: 3}
   - {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
   - {fileID: 8300000, guid: 2e071f5b8b8467d45a5e6e24c23c6ad4, type: 3}
+=======
+  m_ExplosionPrefab: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
+>>>>>>> main
 --- !u!114 &2373658521757894640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,8 +178,11 @@ MonoBehaviour:
   shellLife: 5
   targetRange: 20
   rateFire: 1.5
+<<<<<<< HEAD
   fireSounds:
   - {fileID: 8300000, guid: 5ff823f546b52574a931e1d9b44290a6, type: 3}
+=======
+>>>>>>> main
 --- !u!114 &8509345925894023606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8610beb5702359340a5b95584404f2ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   rotationSpeed: 5
+=======
+>>>>>>> main
 --- !u!114 &6407792897023970202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +220,10 @@ MonoBehaviour:
   strafeLeftKey: 113
   strafeRightKey: 101
   shootKey: 32
+<<<<<<< HEAD
   pauseKey: 112
+=======
+>>>>>>> main
   tankPawn: {fileID: 5841628568308824246}
 --- !u!114 &5841628568308824246
 MonoBehaviour:
@@ -234,6 +266,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< HEAD
   m_Size: {x: 3.2, y: 3.6, z: 4}
   m_Center: {x: 0, y: 1.77, z: -0.19}
 --- !u!82 &2697048251045348991
@@ -344,6 +377,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8da564a352a3d4881ed070f38ceffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Size: {x: 3.2, y: 3.5, z: 4}
+  m_Center: {x: 0, y: 1.77, z: -0.19}
+>>>>>>> main
 --- !u!1 &2027435579287787423
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +477,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: 0, g: 1, b: 0, a: 1}
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+>>>>>>> main
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

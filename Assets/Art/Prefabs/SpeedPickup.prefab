@@ -900,7 +900,10 @@ GameObject:
   - component: {fileID: 4050222101812586595}
   - component: {fileID: 934609096088035228}
   - component: {fileID: -2501831823952442725}
+<<<<<<< HEAD
   - component: {fileID: -4950615423687330622}
+=======
+>>>>>>> main
   m_Layer: 0
   m_Name: SpeedPickup
   m_TagString: Untagged
@@ -938,7 +941,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedBoost: 3
   powerupDuration: 20
+<<<<<<< HEAD
   pickupSound: {fileID: 8300000, guid: a6b77d4c0c448b044af7e89645f1ac08, type: 3}
+=======
+>>>>>>> main
 --- !u!135 &934609096088035228
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -973,6 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 150
+<<<<<<< HEAD
 --- !u!82 &-4950615423687330622
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1069,6 +1076,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> main
 --- !u!1 &4080258922849715264
 GameObject:
   m_ObjectHideFlags: 0

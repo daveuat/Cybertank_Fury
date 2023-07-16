@@ -36,10 +36,13 @@ PrefabInstance:
       propertyPath: returnToStartIfFleeing
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 2471276686120176976, guid: 5cd2a613a30aec44c8861115490425b8, type: 3}
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+=======
+>>>>>>> main
     - target: {fileID: 2720460529816755371, guid: 5cd2a613a30aec44c8861115490425b8, type: 3}
       propertyPath: m_RootOrder
       value: 0

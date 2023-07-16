@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Wall
   - Obstacle
+<<<<<<< HEAD
   - UI
   - playerSpawnParent
   - playerSpawn
@@ -25,6 +26,8 @@ TagManager:
   - EnemyShell
   - GameOverUI
   - GameManager
+=======
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
@@ -35,7 +38,11 @@ TagManager:
   - Shell
   - Pawn
   - Ground
+<<<<<<< HEAD
   - entranceLayer
+=======
+  - 
+>>>>>>> main
   - 
   - 
   - 
